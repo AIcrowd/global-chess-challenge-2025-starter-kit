@@ -67,6 +67,11 @@ Please follow the instructions in [player_agents/README.md](player_agents/README
 
 # 🚴 How to start participating?
 
+**Clone** the repository recursively:
+    ```bash
+    git clone --recursive git@github.com:aicrowd/global-chess-challenge-2025-starter-kit.git
+    cd global-chess-challenge-2025-starter-kit
+    ```
 
 **Install** competition specific dependencies
     ```bash
@@ -136,7 +141,7 @@ Your model must be hosted on Hugging Face. You can use:
 
 ### Using Private or Gated Models
 
-If your model is private or gated, you need to grant AIcrowd access. See [docs/huggingface-gated-models.md](huggingface-gated-models.md) for detailed instructions.
+If your model is private or gated, you need to grant AIcrowd access. See [docs/huggingface-gated-models.md](docs/huggingface-gated-models.md) for detailed instructions.
 
 ## Step 3: Create Your Prompt Template
 
@@ -180,7 +185,7 @@ aicrowd submit-model \
     --challenge "global-chess-challenge-2025" \
     --hf-repo "YOUR_HF_USERNAME/YOUR_MODEL_NAME" \
     --hf-repo-tag "main" \
-    --prompt_template_path "player_agents/YOUR_PROMPT_TEMPLATE.jinja"
+    --prompt-template-path "player_agents/YOUR_PROMPT_TEMPLATE.jinja"
 ```
 
 # ❓ Frequently Asked Questions

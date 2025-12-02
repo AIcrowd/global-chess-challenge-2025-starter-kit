@@ -2,3 +2,4 @@ python-chess
 flask
 openai>=1.0.0
 jinja2>=3.1.6
+-r chess-env/requirements.txt
